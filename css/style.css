@@ -6,13 +6,23 @@
 
 .container{
     display: flex;
+    height:100vh;   
+
 }
 #next,
 #prev{
     cursor:pointer;
+    width:50px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
 }
 
 .box{
     height: 50px;
     flex-grow: 1;
+}
+
+h1{
+    text-align: center;
 }
