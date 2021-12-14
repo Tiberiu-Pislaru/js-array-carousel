@@ -9,6 +9,7 @@ const nameCharacters = [
     'Lily Aldrin',
     'Marshall Eriksen'
 ];
+
 const quotesCharacters =[
     'It\'s gonna be legen...wait for it...dary!',
     'The littlest thing can cause a ripple effect that changes your life.',
@@ -25,7 +26,6 @@ const img = [
     'https://imgix.bustle.com/rehost/2016/9/13/eed758fe-dc9b-48e1-8dc6-85e88e3e7b0a.jpg?w=800&fit=crop&crop=faces&auto=format%2Ccompress',
     'https://i.pinimg.com/originals/07/35/47/0735473133ac31fd134172c9b504bae8.jpg',
     'https://pbs.twimg.com/media/EaJm_56WsAAEKEi.jpg:large'
-
 ];
 
 //2 creo le altre variabili che mi servirano
@@ -40,6 +40,7 @@ const imgCharacter = document.getElementById('img-character');
 
 title.innerHTML = nameCharacters[currentIndex];
 paragraph.innerHTML = quotesCharacters[currentIndex];
+imgCharacter.src = img[currentIndex];
 
 buttonNext.addEventListener('click', function () {
     // box.classList.remove(listaColore[currentIndex]);
@@ -49,9 +50,9 @@ buttonNext.addEventListener('click', function () {
     }
     title.innerHTML = nameCharacters[currentIndex];
     paragraph.innerHTML = quotesCharacters[currentIndex];
-    imgCharacter.src = 
+    imgCharacter.src = img[currentIndex];
     
-
+    
 })
 
 buttonBefore.addEventListener('click', function () {
@@ -61,6 +62,7 @@ buttonBefore.addEventListener('click', function () {
     }
     title.innerHTML = nameCharacters[currentIndex];
     paragraph.innerHTML = quotesCharacters[currentIndex];
+    imgCharacter.src = img[currentIndex];
     
 
 })
